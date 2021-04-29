@@ -5,10 +5,6 @@ LICENSE = "Apache-2.0"
 
 inherit metadata-generator bundle-generator rootfs-image-generator
 
-# Require
-
-require inc/xt_shared_env.inc
-
 # Depends
 
 DEPENDS_remove = " ostree-native squashfs-tools-native"
