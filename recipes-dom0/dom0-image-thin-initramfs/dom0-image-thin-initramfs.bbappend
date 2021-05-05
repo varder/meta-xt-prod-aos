@@ -1,5 +1,6 @@
 FILESEXTRAPATHS_prepend := "${THISDIR}/files:"
-FILESEXTRAPATHS_prepend := "${THISDIR}/../../recipes-domx:"
+
+require recipes-domx/meta-xt-prod-domx/inc/xt_shared_env.inc
 
 do_configure[depends] += "domd-image-minimal:do_domd_install_machine_overrides"
 do_compile[depends] += "domd-image-minimal:do_${BB_DEFAULT_TASK}"

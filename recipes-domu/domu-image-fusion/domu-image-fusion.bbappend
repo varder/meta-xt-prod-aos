@@ -1,5 +1,7 @@
 FILESEXTRAPATHS_prepend := "${THISDIR}/files:"
-FILESEXTRAPATHS_prepend := "${THISDIR}/../../recipes-domx:"
+#FILESEXTRAPATHS_prepend := "${THISDIR}/../../recipes-domx:"
+
+require recipes-domx/meta-xt-prod-domx/inc/xt_shared_env.inc
 
 ###############################################################################
 # extra layers and files to be put after Yocto's do_unpack into inner builder

@@ -1,5 +1,6 @@
 FILESEXTRAPATHS_prepend := "${THISDIR}/files:"
-FILESEXTRAPATHS_prepend := "${THISDIR}/../../recipes-domx:"
+
+require recipes-domx/meta-xt-prod-domx/inc/xt_shared_env.inc
 
 XT_PRODUCT_NAME ?= "prod-aos"
 
